@@ -1,0 +1,51 @@
+orderi429@gmail.com
+
+README for MyContainer Assignment
+This project makes a simple container class called MyContainer that 
+holds items you can compare.
+You can add items, remove items, and check how many items are inside.
+
+You can also go through the items in different ways :
+
+Order: the order you added items.
+
+AscendingOrder: from smallest to largest.
+
+DescendingOrder: from largest to smallest.
+
+SideCrossOrder: smallest, largest, then 2nd smallest, 2nd largest, and
+so on.
+
+ReverseOrder: the reverse of the add order.
+
+MiddleOutOrder: start from the middle item, then alternate left, right
+left.
+
+All code is in the container namespace.
+
+
+
+Project files:
+
+MyContainer.hpp: code for the container and iterators
+
+main.cpp: example showing how to use the container
+
+test.cpp: unit tests using the doctest framework
+
+Makefile: commands to build, test, check memory, and clean
+
+
+Makefile automates build and test:
+
+    make Main – builds the demo 
+    ./main - runs the demo 
+
+    make test – builds the unit tests
+    ./test - runs the unit tests
+
+    make valgrind_test – checks for memory leaks on test
+
+    make valgrind_main – checks for memory leaks on main
+
+    make clean – removes compiled files
